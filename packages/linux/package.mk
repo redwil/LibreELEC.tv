@@ -15,6 +15,12 @@ PKG_IS_KERNEL_PKG="yes"
 PKG_PATCH_DIRS="$LINUX"
 
 case "$LINUX" in
+  allwinner)
+    PKG_VERSION="4.20.3"
+    PKG_SHA256="b9c1bd128404a8e73b57f764256fcaca8eb09f9a892e292856dbeffafa187f45"
+    PKG_URL="https://www.kernel.org/pub/linux/kernel/v4.x/$PKG_NAME-$PKG_VERSION.tar.xz"
+    PKG_PATCH_DIRS="allwinner"
+    ;;
   amlogic-3.10)
     PKG_VERSION="95ba9d626c0fce672caa296f5911ab9190881642"
     PKG_SHA256="df34b086993fd3552efae92d84d28990a61a1ca79a8703a4b64241ab80e3b6db"
