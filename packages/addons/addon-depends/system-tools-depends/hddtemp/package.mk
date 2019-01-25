@@ -15,7 +15,6 @@ PKG_CONFIGURE_OPTS_TARGET="--with-db-path=/storage/.kodi/addons/virtual.system-t
 post_unpack() {
   cd $PKG_BUILD
   wget -O hddtemp.db http://download.savannah.nongnu.org/releases/hddtemp/hddtemp.db
-  wget -O hddtemp.db.sig http://download.savannah.nongnu.org/releases/hddtemp/hddtemp.db.sig
 }
 
 makeinstall_target() {
